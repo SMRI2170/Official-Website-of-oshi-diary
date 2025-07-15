@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー - 推し活日記</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans JP', sans-serif; }
+        .text-primary { color: #9333ea; }
+        .prose h2 { margin-top: 2em; margin-bottom: 1em; font-size: 1.5rem; font-weight: 700; border-bottom: 2px solid #E5E7EB; padding-bottom: 0.5em; }
+        .prose h3 { margin-top: 1.5em; margin-bottom: 0.8em; font-size: 1.25rem; font-weight: 600; }
+        .prose p, .prose ul { margin-bottom: 1em; line-height: 1.7; }
+        .prose ul { list-style-type: disc; padding-left: 1.5em; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                </svg>
+                <h1 class="text-2xl font-bold text-primary">推し活日記</h1>
+            </a>
+            <a href="index.html#download" class="bg-purple-600 text-white px-5 py-2 rounded-full font-bold hover:opacity-90 transition shadow-md">
+                アプリを入手
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16">
+        <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-md">
+            <article class="prose lg:prose-lg max-w-none">
+                <h1 class="text-4xl font-black text-center mb-8">プライバシーポリシー</h1>
+                <p>制定日: 2025年7月15日</p>
+                <p>「推し活日記」（以下、「本アプリ」といいます）は、ユーザーの皆様のプライバシーを尊重し、個人情報の保護に最大限の注意を払っています。本プライバシーポリシーは、本アプリがどのように情報を扱うかについて説明するものです。</p>
+
+                <h2>1. 取得する情報</h2>
+                <p>本アプリは、ユーザーの皆様から個人情報を取得することはありません。すべてのデータは、お使いのデバイス内にのみ保存され、開発者が外部からアクセスすることはありません。</p>
+                
+                <h3>ユーザーが入力する情報</h3>
+                <p>以下の情報は、ユーザーが任意で入力するものであり、すべてデバイス内にのみ保存されます。</p>
+                <ul>
+                    <li>推しのプロフィール情報（名前、誕生日、画像など）</li>
+                    <li>スケジュール情報</li>
+                    <li>日記の内容</li>
+                    <li>グッズや予算に関する情報</li>
+                </ul>
+
+                <h2>2. 情報の利用目的</h2>
+                <p>ユーザーが入力したデータは、本アプリの機能を提供するためにのみ、デバイス内で利用されます。これらの情報がアプリの改善、広告、またはその他の目的で外部に送信されることはありません。</p>
+
+                <h2>3. 情報の第三者への提供</h2>
+                <p>本アプリは、ユーザーのデータを外部の第三者に提供または共有することはありません。</p>
+
+                <h2>4. データのバックアップと復元</h2>
+                <p>本アプリのデータはお使いのデバイス内に保存されます。機種変更やアプリのアンインストールを行うと、データは失われます。データのバックアップについては、OSが提供するバックアップ機能をご利用ください。</p>
+
+                <h2>5. お問い合わせ</h2>
+                <p>本プライバシーポリシーに関するご質問は、下記までご連絡ください。</p>
+                <p>連絡先: [あなたの連絡先メールアドレス]</p>
+
+                <h2>6. プライバシーポリシーの変更</h2>
+                <p>本プライバシーポリシーは、法令の変更やアプリのアップデートに伴い、事前の予告なく変更されることがあります。変更後のプライバシーポリシーは、本ページに掲載された時点から効力を生じるものとします。</p>
+            </article>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 mt-16">
+        <div class="container mx-auto px-6 py-10 text-center text-sm text-gray-500">
+            <p>&copy; <span id="year"></span> 推し活日記. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
