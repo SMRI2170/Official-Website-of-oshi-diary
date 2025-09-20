@@ -27,6 +27,8 @@
         }
         .bg-primary { background-color: #9333ea; } /* purple-600 */
         .text-primary { color: #9333ea; }
+        .border-primary { border-color: #9333ea; }
+        .ring-primary { --tw-ring-color: #9333ea; }
         .bg-primary-gradient {
             background-image: linear-gradient(to right, #a855f7, #9333ea); /* purple-500 to purple-600 */
         }
@@ -123,6 +125,7 @@
             <nav class="hidden md:flex space-x-8">
                 <a href="#concept" class="text-gray-600 hover:text-primary transition">コンセプト</a>
                 <a href="#download" class="text-gray-600 hover:text-primary transition">ダウンロード</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary transition">お問い合わせ</a>
             </nav>
             <a href="#download" class="hidden md:block bg-primary-gradient text-white px-5 py-2 rounded-full font-bold hover:opacity-90 transition shadow-md">
                 アプリを入手
@@ -154,7 +157,7 @@
                          <div class="relative w-[280px] aspect-[320/650] gsap-reveal">
                             <div class="phone-mockup">
                                 <div class="phone-screen">
-                                    <img src="home.png" alt="推し活日記 ホーム画面" class="w-full h-full object-cover">
+                                    <img src="https://placehold.co/320x650/f5f5f7/cccccc?text=Home" alt="推し活日記 ホーム画面" class="w-full h-full object-cover">
                                 </div>
                             </div>
                          </div>
@@ -193,16 +196,16 @@
                         </div>
                     </div>
                     <div class="track-item">
-                        <div class="phone-slide"><div class="phone-mockup"><div class="phone-screen"><img src="screen-profile.png" alt="推しプロフィール画面"></div></div></div>
+                        <div class="phone-slide"><div class="phone-mockup"><div class="phone-screen"><img src="https://placehold.co/320x650/f5f5f7/cccccc?text=Profile" alt="推しプロフィール画面"></div></div></div>
                     </div>
                     <div class="track-item">
-                        <div class="phone-slide"><div class="phone-mockup"><div class="phone-screen"><img src="screen-calendar.png" alt="カレンダー画面"></div></div></div>
+                        <div class="phone-slide"><div class="phone-mockup"><div class="phone-screen"><img src="https://placehold.co/320x650/f5f5f7/cccccc?text=Calendar" alt="カレンダー画面"></div></div></div>
                     </div>
                     <div class="track-item">
-                        <div class="phone-slide"><div class="phone-mockup"><div class="phone-screen"><img src="screen-timeline.png" alt="タイムライン画面"></div></div></div>
+                        <div class="phone-slide"><div class="phone-mockup"><div class="phone-screen"><img src="https://placehold.co/320x650/f5f5f7/cccccc?text=Timeline" alt="タイムライン画面"></div></div></div>
                     </div>
                     <div class="track-item">
-                        <div class="phone-slide"><div class="phone-mockup"><div class="phone-screen"><img src="screen-budget.png" alt="予算管理画面"></div></div></div>
+                        <div class="phone-slide"><div class="phone-mockup"><div class="phone-screen"><img src="https://placehold.co/320x650/f5f5f7/cccccc?text=Budget" alt="予算管理画面"></div></div></div>
                     </div>
                     <div class="track-item">
                         <div class="text-block">
@@ -211,10 +214,10 @@
                         </div>
                     </div>
                     <div class="track-item">
-                        <div class="phone-slide"><div class="phone-mockup"><div class="phone-screen"><img src="screen-goods.png" alt="グッズ管理画面"></div></div></div>
+                        <div class="phone-slide"><div class="phone-mockup"><div class="phone-screen"><img src="https://placehold.co/320x650/f5f5f7/cccccc?text=Goods" alt="グッズ管理画面"></div></div></div>
                     </div>
                      <div class="track-item">
-                        <div class="phone-slide"><div class="phone-mockup"><div class="phone-screen"><img src="screen-diary.png" alt="日記画面"></div></div></div>
+                        <div class="phone-slide"><div class="phone-mockup"><div class="phone-screen"><img src="https://placehold.co/320x650/f5f5f7/cccccc?text=Diary" alt="日記画面"></div></div></div>
                     </div>
                 </div>
             </div>
@@ -235,6 +238,43 @@
                 </div>
             </div>
         </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl font-bold text-center gsap-reveal">お問い合わせ</h2>
+                    <p class="text-gray-600 mt-6 text-center gsap-reveal">ご意見、ご感想、不具合の報告などはこちらのフォームからお気軽にお寄せください。</p>
+
+                    <form action="#" method="POST" class="mt-10 space-y-6 gsap-reveal">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">お名前</label>
+                            <div class="mt-1">
+                                <input type="text" name="name" id="name" autocomplete="name" required class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm p-3">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">メールアドレス</label>
+                            <div class="mt-1">
+                                <input id="email" name="email" type="email" autocomplete="email" required class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm p-3">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">お問い合わせ内容</label>
+                            <div class="mt-1">
+                                <textarea id="message" name="message" rows="4" required class="w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm p-3"></textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-primary-gradient text-white px-8 py-3 rounded-full text-lg font-bold hover:opacity-90 transition-transform transform hover:scale-105 shadow-lg">
+                                送信する
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
@@ -250,6 +290,7 @@
                     <ul class="mt-2 space-y-2 text-sm">
                         <li><a href="#concept" class="text-gray-400 hover:text-white">コンセプト</a></li>
                         <li><a href="#download" class="text-gray-400 hover:text-white">ダウンロード</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">お問い合わせ</a></li>
                     </ul>
                 </div>
                 <div>
@@ -324,9 +365,34 @@
 
             // Footer year
             document.getElementById('year').textContent = new Date().getFullYear();
+
+            // Replace image placeholders
+            const imageSources = {
+                "Home": "home.png",
+                "Profile": "screen-profile.png",
+                "Calendar": "screen-calendar.png",
+                "Timeline": "screen-timeline.png",
+                "Budget": "screen-budget.png",
+                "Goods": "screen-goods.png",
+                "Diary": "screen-diary.png"
+            };
+            document.querySelectorAll('.phone-screen img, .hero-background img').forEach(img => {
+                const altText = img.alt;
+                for (const key in imageSources) {
+                    if (altText.includes(key)) {
+                        // In a real scenario, you'd have the actual image paths.
+                        // Here we just remove the placeholder text.
+                        const newSrc = `https://placehold.co/320x650/f5f5f7/333333?text=${key}`;
+                        img.src = newSrc;
+                        // To prevent broken images if the files don't exist, we keep placeholders.
+                        // If you upload the images, you can change the src to the actual path.
+                        // For example: img.src = imageSources[key];
+                        img.onerror = () => { img.src = `https://placehold.co/320x650/f5f5f7/cccccc?text=${key.replace(' ', '+')}`; };
+                    }
+                }
+            });
         });
     </script>
 
 </body>
 </html>
-
